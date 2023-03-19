@@ -8,7 +8,7 @@ final class FormatStars
 {
     public static function execute(mixed $rating, int $max = 5): string
     {
-        $flooredRating = floor($rating);
+        $flooredRating = floor((float) $rating);
         $stars         = '';
 
         while (mb_strlen($stars) < $flooredRating) {
