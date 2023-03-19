@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.0.1] - 2023-03-19
+### Fixed
+- cast rating to float before counting
+
+
 ## 1.0.0 - 2023-03-18
 
-[Unreleased]: https://github.com/PreemStudio/:package_slug/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/PreemStudio/:package_slug/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/PreemStudio/:package_slug/compare/1.0.0...1.0.1
