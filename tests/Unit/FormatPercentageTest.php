@@ -6,7 +6,7 @@ namespace Tests\Unit;
 
 use PreemStudio\Formatter\FormatPercentage;
 
-it('formats the input value as a percentage', function () {
+it('formats the input value as a percentage', function (): void {
     expect(FormatPercentage::execute(0))->toBe('0.00%');
     expect(FormatPercentage::execute(50))->toBe('50.00%');
     expect(FormatPercentage::execute(100))->toBe('100.00%');

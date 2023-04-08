@@ -18,20 +18,20 @@ final class ScaleValue
             ],
         ];
 
-        if (count($args) === 1 && is_string($args[0])) {
+        if (\count($args) === 1 && \is_string($args[0])) {
             $preset = $presets[$args[0]];
 
-            return ScaleValue::execute(...$preset);
+            return self::execute(...$preset);
         }
 
         [$steps, $results] = $args;
 
-        if (count($steps) !== count($results) - 1) {
+        if (\count($steps) !== \count($results) - 1) {
             throw new RuntimeException('<results> length should be n + 1 for n <steps>.');
         }
 
         return function ($value) use ($steps, $results) {
-            return $results[array_search(true, array_map(fn ($step) => $step > $value, $steps))];
+            return $results[\array_search(true, \array_map(fn ($step) => $step > $value, $steps), true)];
         };
     }
 }

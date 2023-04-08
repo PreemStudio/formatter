@@ -14,6 +14,6 @@ final class FormatNumber
             $value /= 1000;
         }
 
-        return round($value, 1).$units[$i];
+        return \round($value, 1).$units[$i];
     }
 }

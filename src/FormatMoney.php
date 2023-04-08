@@ -13,15 +13,15 @@ final class FormatMoney
 {
     public static function execute(float|int|string $amount, string $currency): string
     {
-        if (is_float($amount)) {
-            $amount = intval($amount * 100);
+        if (\is_float($amount)) {
+            $amount = (int) ($amount * 100);
         }
 
-        $money      = (new Money($amount, new Currency($currency)));
-        $currencies = new ISOCurrencies;
+        $money = (new Money($amount, new Currency($currency)));
+        $currencies = new ISOCurrencies();
 
         $numberFormatter = new \NumberFormatter('en_US', \NumberFormatter::CURRENCY);
-        $moneyFormatter  = new IntlMoneyFormatter($numberFormatter, $currencies);
+        $moneyFormatter = new IntlMoneyFormatter($numberFormatter, $currencies);
 
         return $moneyFormatter->format($money);
     }

@@ -6,7 +6,7 @@ namespace Tests\Unit;
 
 use PreemStudio\Formatter\FormatBytes;
 
-it('formats bytes with appropriate units', function () {
+it('formats bytes with appropriate units', function (): void {
     expect(FormatBytes::execute(0))->toBe('0 B');
     expect(FormatBytes::execute(999))->toBe('999 B');
     expect(FormatBytes::execute(1000))->toBe('1000 B');
@@ -23,11 +23,11 @@ it('formats bytes with appropriate units', function () {
     expect(FormatBytes::execute(999999999999999))->toBe('909.49 TB');
 });
 
-it('handles negative values', function () {
+it('handles negative values', function (): void {
     expect(FormatBytes::execute(-1000))->toBe('0 B');
 });
 
-it('handles precision', function () {
+it('handles precision', function (): void {
     expect(FormatBytes::execute(1234, 0))->toBe('1 KB');
     expect(FormatBytes::execute(1234, 1))->toBe('1.2 KB');
     expect(FormatBytes::execute(1234, 3))->toBe('1.205 KB');

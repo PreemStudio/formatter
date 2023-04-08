@@ -6,7 +6,7 @@ namespace Tests\Unit;
 
 use PreemStudio\Formatter\FormatOrdinal;
 
-it('formats positive integers as ordinals', function () {
+it('formats positive integers as ordinals', function (): void {
     expect(FormatOrdinal::execute(1))->toBe('1st');
     expect(FormatOrdinal::execute(2))->toBe('2nd');
     expect(FormatOrdinal::execute(3))->toBe('3rd');
@@ -19,7 +19,7 @@ it('formats positive integers as ordinals', function () {
     expect(FormatOrdinal::execute(111))->toBe('111th');
 });
 
-it('formats negative integers as ordinals', function () {
+it('formats negative integers as ordinals', function (): void {
     expect(FormatOrdinal::execute(-1))->toBe('−1st');
     expect(FormatOrdinal::execute(-2))->toBe('−2nd');
     expect(FormatOrdinal::execute(-3))->toBe('−3rd');
@@ -32,13 +32,13 @@ it('formats negative integers as ordinals', function () {
     expect(FormatOrdinal::execute(-111))->toBe('−111th');
 });
 
-it('formats decimal numbers as ordinals', function () {
+it('formats decimal numbers as ordinals', function (): void {
     expect(FormatOrdinal::execute(1.5))->toBe('1st');
     expect(FormatOrdinal::execute(2.4))->toBe('2nd');
     expect(FormatOrdinal::execute(3.6))->toBe('3rd');
 });
 
-it('formats with different locales', function () {
+it('formats with different locales', function (): void {
     expect(FormatOrdinal::execute(1, 'fr-FR'))->toBe('1er');
     expect(FormatOrdinal::execute(2, 'fr-FR'))->toBe('2e');
     expect(FormatOrdinal::execute(3, 'fr-FR'))->toBe('3e');

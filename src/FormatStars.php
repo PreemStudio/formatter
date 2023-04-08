@@ -8,18 +8,19 @@ final class FormatStars
 {
     public static function execute(mixed $rating, int $max = 5): string
     {
-        $flooredRating = floor((float) $rating);
-        $stars         = '';
+        $flooredRating = \floor((float) $rating);
+        $stars = '';
 
-        while (mb_strlen($stars) < $flooredRating) {
+        while (\mb_strlen($stars) < $flooredRating) {
             $stars .= '★';
         }
 
-        if (mb_strlen($stars) >= $max) {
+        if (\mb_strlen($stars) >= $max) {
             return $stars;
         }
 
         $decimal = $rating - $flooredRating;
+
         if ($decimal >= 0.875) {
             $stars .= '★';
         } elseif ($decimal >= 0.625) {
@@ -30,7 +31,7 @@ final class FormatStars
             $stars .= '¼';
         }
 
-        while (mb_strlen($stars) < $max) {
+        while (\mb_strlen($stars) < $max) {
             $stars .= '☆';
         }
 

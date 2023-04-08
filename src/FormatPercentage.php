@@ -8,6 +8,6 @@ final class FormatPercentage
 {
     public static function execute(mixed $value): string
     {
-        return number_format((float) $value, 2).'%';
+        return \number_format((float) $value, 2).'%';
     }
 }
