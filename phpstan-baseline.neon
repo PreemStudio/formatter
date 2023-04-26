@@ -1,0 +1,51 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Parameter \\#1 \\$number of function abs expects float\\|int\\|string, mixed given\\.$#"
+			count: 1
+			path: src/FormatMetric.php
+
+		-
+			message: "#^Part \\$n \\(mixed\\) of encapsed string cannot be cast to string\\.$#"
+			count: 1
+			path: src/FormatMetric.php
+
+		-
+			message: "#^Parameter \\#1 \\$amount of class Money\\\\Money constructor expects int\\|numeric\\-string, int\\|string given\\.$#"
+			count: 1
+			path: src/FormatMoney.php
+
+		-
+			message: "#^Parameter \\#1 \\$code of class Money\\\\Currency constructor expects non\\-empty\\-string, string given\\.$#"
+			count: 1
+			path: src/FormatMoney.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Formatter\\\\FormatOrdinal\\:\\:execute\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Parameter \\#1 \\$locale of class NumberFormatter constructor expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 1
+			path: src/FormatPercentage.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 1
+			path: src/FormatStars.php
+
+		-
+			message: "#^Method BombenProdukt\\\\Formatter\\\\ScaleValue\\:\\:execute\\(\\) has parameter \\$args with no type specified\\.$#"
+			count: 1
+			path: src/ScaleValue.php
