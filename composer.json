@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/formatter",
+    "homepage": "https://github.com/faustbrian/formatter",
     "require": {
         "php": "^8.2",
         "moneyphp/money": "^4.1"
