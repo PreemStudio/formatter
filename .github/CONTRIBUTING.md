@@ -16,7 +16,7 @@ When requesting or submitting new features, first consider whether it might be u
 
 ## Guidelines
 
-* Please follow the [Coding Style Guide](https://github.com/BombenProdukt/php-cs-fixer-config/blob/main/src/Presets/Standard.php).
+* Please follow the [Coding Style Guide](https://github.com/faustbrian/php-cs-fixer-config/blob/main/src/Presets/Standard.php).
 * Ensure that the current tests pass, and if you've added something new, add the tests where relevant.
 * Send a coherent commit history, making sure each commit in your pull request is meaningful.
 * You may need to [rebase](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) to avoid merge conflicts.
@@ -41,5 +41,5 @@ $ composer test
 
 ## Credits
 
-- [BombenProdukt](https://github.com/BombenProdukt)
+- [Brian Faust](https://github.com/faustbrian)
 - [All Contributors](../../../contributors)
