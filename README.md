@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/formatter/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/formatter" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/formatter">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/formatter" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/formatter">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/formatter" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/formatter">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/formatter" alt="License" />
-    </a>
-</p>
 
 ## About Formatter
 
