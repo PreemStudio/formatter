@@ -1,6 +1,11 @@
 parameters:
 	ignoreErrors:
 		-
+			message: "#^Only booleans are allowed in a ternary operator condition, int\\<0, max\\> given\\.$#"
+			count: 1
+			path: src/FormatBytes.php
+
+		-
 			message: "#^Parameter \\#1 \\$number of function abs expects float\\|int\\|string, mixed given\\.$#"
 			count: 1
 			path: src/FormatMetric.php
@@ -19,6 +24,11 @@ parameters:
 			message: "#^Parameter \\#1 \\$code of class Money\\\\Currency constructor expects non\\-empty\\-string, string given\\.$#"
 			count: 1
 			path: src/FormatMoney.php
+
+		-
+			message: "#^Variable \\$i might not be defined\\.$#"
+			count: 1
+			path: src/FormatNumber.php
 
 		-
 			message: "#^Cannot cast mixed to int\\.$#"
