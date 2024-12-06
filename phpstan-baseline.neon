@@ -1,0 +1,71 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Only booleans are allowed in a ternary operator condition, int\\<0, max\\> given\\.$#"
+			count: 1
+			path: src/FormatBytes.php
+
+		-
+			message: "#^Cannot cast mixed to string\\.$#"
+			count: 1
+			path: src/FormatMetric.php
+
+		-
+			message: "#^Parameter \\#1 \\$num of function abs expects float\\|int, mixed given\\.$#"
+			count: 1
+			path: src/FormatMetric.php
+
+		-
+			message: "#^Parameter \\#1 \\$amount of class Money\\\\Money constructor expects int\\|numeric\\-string, int\\|string given\\.$#"
+			count: 1
+			path: src/FormatMoney.php
+
+		-
+			message: "#^Parameter \\#1 \\$code of class Money\\\\Currency constructor expects non\\-empty\\-string, string given\\.$#"
+			count: 1
+			path: src/FormatMoney.php
+
+		-
+			message: "#^Variable \\$i might not be defined\\.$#"
+			count: 1
+			path: src/FormatNumber.php
+
+		-
+			message: "#^Cannot cast mixed to int\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Formatter\\\\FormatOrdinal\\:\\:execute\\(\\) should return string but returns string\\|false\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Parameter \\#1 \\$locale of class NumberFormatter constructor expects string, string\\|null given\\.$#"
+			count: 1
+			path: src/FormatOrdinal.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 1
+			path: src/FormatPercentage.php
+
+		-
+			message: "#^Cannot cast mixed to float\\.$#"
+			count: 1
+			path: src/FormatStars.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\Formatter\\\\ScaleValue\\:\\:execute\\(\\) has parameter \\$args with no type specified\\.$#"
+			count: 1
+			path: src/ScaleValue.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php

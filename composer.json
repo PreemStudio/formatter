@@ -1,0 +1,57 @@
+{
+    "name": "basecodeoy/formatter",
+    "description": "A package to easily transform data into various formats with PHP.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "fmt"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/formatter",
+    "support": {
+        "issues": "https://github.com/basecodeoy/formatter/issues",
+        "source": "https://github.com/basecodeoy/formatter",
+        "security": "https://github.com/basecodeoy/formatter/blob/main/.github/SECURITY.md"
+    },
+    "require": {
+        "php": "^8.3",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "moneyphp/money": "^4.6.0"
+    },
+    "require-dev": {
+        "basecodeoy/crate": "^1.0.0",
+        "basecodeoy/standards": "^1.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Formatter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "audit": {
+            "abandoned": "report"
+        },
+        "preferred-install": "dist",
+        "sort-packages": true
+    }
+}
